@@ -123,6 +123,7 @@ console.log("noseX=  " + noseX +"   noseY=  "+noseY);
 function changeGameStatud(character){
   if(GameStatus=="start" && noseX !="" && gameConfig.status==="start") {
     world_start.play();
+	    document.getElementById("status").innerHTML="GAME LOADED !!";
     initializeCharacterStatus(mario);
     gameConfig.status= "play";
   }
